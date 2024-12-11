@@ -33,11 +33,11 @@
   .name-text {
     color:#112D4E;
   }
-</style>
+</style>   
   </head>
-  <body>
+  <body style="background-color: #3f72af;">
     <!-- Navbar -->
-    <section id="navbar-section">
+    <section id="navbar-section ">
       <nav class="navbar navbar-expand-sm" aria-label="Sixth navbar example">
         <div class="container-fluid">
           <a class="navbar-brand mx-5 main-text " href="#">Personal Portfolio</a>
@@ -60,25 +60,33 @@
           >
             <ul class="navbar-nav ms-auto mb-2 mb-xl-0 ">
               <li class="nav-item">
-                <a class="nav-link  px-3" aria-current="page" href="#">Home</a>
+                <a id="home-link" class="nav-link  px-3" aria-current="page" href="#">Home</a>
               </li>
            
         
               <li class="nav-item">
-                <a href="" class="nav-link px-3">
+                <a    id="resume-link" href="#resume" class="nav-link px-3">
                     Resume
                 </a>
               </li>
               
               <li class="nav-item">
-                <a href="" class="nav-link px-3">
+                <a   id="projects-link" href="#projects" class="nav-link px-3">
                     Projects
                 </a>
               </li>
                            
               <li class="nav-item">
-                <a href="" class="nav-link px-3">
-                    About Me
+                <a  id="contact-link"  href="/contact.html" class="nav-link px-3">
+Contact
+                </a>
+              </li>
+
+                    <li class="nav-item">
+             
+<button id="languageToggle" class="btn btn-custom">TR</button>
+
+
                 </a>
               </li>
           </div>
@@ -86,24 +94,431 @@
       </nav>
     </section>
     <section id="hero">
-        <div class=" py-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold  name-text">Hi, I'm Umut Can</h1>
+        <div class=" py-5 text-center">
+    <h1 id="hero-greeting" class="display-4 fw-bold  name-text">Hi, I'm Umut Can</h1>
     <div class="col-lg-6 mx-auto my-3">
-      <p class="lead mb-4 second-text">A passionate developer striving to build innovative and impactful solutions. This portfolio showcases my projects, skills, and professional journey.For more details about my professional experience, feel free to visit my Linkedin and GitHub profiles.</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      <p  id="hero-description" class="lead mb-4 second-text">A passionate developer striving to build innovative and impactful solutions. This portfolio showcases my projects, skills, and professional journey.For more details about my professional experience, feel free to visit my Linkedin and GitHub profiles.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-4">
         <button type="button" class="btn  btn-lg px-4 me-sm-3 btn-custom"> <a href="https://www.linkedin.com/in/umut-can-kavak/"><img src="/images/icons8-linkedin-100.png" alt=""></a>  </button>
         <button type="button" class="btn  btn-lg px-4 btn-custom"><a href="https://github.com/UmutcanKAVAK"><img src="/images/icons8-github-64.png" alt=""></a></button>
       </div>
     </div>
-    <div class="overflow-hidden" style="max-height: 30vh;">
+    <div class=" overflow-hidden" style="max-height: 30vh;  max-height:50vh ;">
       <div class="container px-5">
-        <img src="images/student-studying-at-home-free-vector.jpg" class="img-fluid border rounded-3 shadow-lg " alt="Example image" width="700" height="500" loading="lazy">
+        <img src="images/student-studying-at-home-free-vector.jpg" class=" border rounded-3 shadow-lg img-fluid " alt="Example image" width="400" height="400" loading="lazy">
       </div>
     </div>
   </div>
     </section>
-    <section id="resume"></section>
-    <section id="projects"></section>
-    <section id="aboutme"></section>
+    <section id="resume">
+<div class="container my-1 border-bottom border-top">
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<div class="lc-block">
+				
+				<h2 id="resume-header" editable="inline" class="name-text" ><b>Resume</b></h2>
+        <p></p>
+			</div>
+			<!-- /lc-block -->
+		</div>
+	</div>
+	<div class="row pt-4 pb-4 g-0">
+		<div class="col-md-4 text-center">
+			<div class="lc-block p-4">
+				<div>
+				<img src="images/education.svg" alt="" width="40px" height="40px">
+					<h5 id="education-header" class="mb-4 mt-3" editable="inline">
+						<strong>Education</strong>
+					</h5>
+				</div>
+				<div >
+          <ul id="education-details" class="list-unstyled">
+            <li><p class="second-text fw-bold">GoIT Full Stack Development Course <br>
+              <p class="second-text text-muted">(2024 December - November 2025) </p> </p></li>
+            <li><p class="second-text    fw-bold "> Golhisar Uygulamalari Bilimler Yuksekokulu</p></li>
+            <li>  <p class="second-text  text-muted    ">Bachelors Degree (2021-2025)</p> </li>
+             <li><p class="second-text  fw-bold"      >Yatagan Anadolu Lisesi - Graduated</p></li>
+            <li>  <p class="second-text text-muted "     >High School Degree (2016-2020)</p> </li>
+          </ul>
+
+         
+				</div>
+			</div>
+			<!-- /lc-block -->
+		</div>
+		<div class="col-md-4 text-center shadow">
+			<div class="lc-block p-4">
+				<div>
+		<img src="images/skills-8818.svg" alt="" width="50px" height="50px">
+					<h5 id="skills-header" class="mb-4 mt-3" editable="inline">
+						<strong>Skills</strong>
+					</h5>
+				</div>
+			<div class="">
+  <ul id="skills-details" class="list-unstyled">
+    <li>
+      <p class="second-text fw-bold">Programming Languages</p>
+      <p class="text-muted second-text">HTML, CSS, JavaScript, Python</p>
+    </li>
+    <li>
+      <p class="second-text fw-bold">Frameworks and Libraries</p>
+      <p class="text-muted second-text">Bootstrap, React, Laravel</p>
+    </li>
+    <li>
+      <p class="second-text fw-bold">Tools and Platforms</p>
+      <p class="text-muted second-text">Figma, Git, GitHub</p>
+    </li>
+    <li>
+      <p class="second-text fw-bold">Soft Skills</p>
+      <p class="text-muted second-text">Teamwork, Problem-Solving, Time Management</p>
+    </li>
+  </ul>
+</div>
+
+			</div>
+		</div>
+		<div class="col-md-4 text-center">
+			<div class="lc-block p-4">
+				<div>
+		<!-- image here -->
+    <div>
+  <img src="images/expertise_17378291.png" alt="Work Experience Icon" width="50" height="50">
+  <h5   id="work-experience-header"   class="mb-4 mt-3">
+    <strong>Work Experience</strong>
+  </h5>
+</div>
+<div>
+  <ul  id="work-experience" class="list-unstyled">
+    <li>
+      <p class="second-text fw-bold">Bootcamp Training</p>
+      <p class="text-muted second-text">Currently enrolled in a Full Stack Development Bootcamp, building practical skills in web development, including HTML, CSS, JavaScript, and React.</p>
+    </li>
+    <li>
+      <p class="second-text fw-bold">Personal Projects</p>
+      <p class="text-muted second-text">Developed several projects during training to demonstrate my skills, including portfolio websites, responsive layouts, and dynamic applications.</p>
+    </li> 
+    <li> 
+      <p class="second-text fw-bold">Future Aspirations</p>
+      <p class="text-muted second-text ">Actively preparing to apply for entry-level web development roles upon completing the bootcamp, with a strong focus on both technical and collaborative skills.</p>
+    </li>
+  </ul>
+</div>
+
+</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+<section id="projects">
+  <div class="container  ">
+    <div  id="projects-container" class="row  justify-content-center g-4 my-3 align-contents-center text-center">
+      <!-- Hayalai ChatBot Project -->
+
+       				
+				<h2  id="projects-header" editable="inline" class="name-text" ><b>Projects</b></h2>
+        <p id="projects-description" class="text-muted second-text ">Here are some of the projects I made so far. There will be more yet to come.</p>
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+        <div class="card h-100" style="width: 18rem;">
+          <img src="images/hayalai.jpg" class="card-img-top" alt="Hayalai ChatBot Project">
+          <div class="card-body">
+            <h5 class="card-title">Hayalai ChatBot Project</h5>
+            <p class="card-text">An AI-powered chatbot designed to assist users with various tasks, providing quick and accurate responses.</p>
+            <a href="https://github.com/UmutcanKAVAK/next_project" class="btn btn-primary github-button" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personal Portfolio V1 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center  ">
+        <div class="card h-100" style="width: 18rem;">
+          <img src="images/main-page-resume.jpg" class="card-img-top" alt="Personal Portfolio V1">
+          <div class="card-body">
+            <h5 class="card-title">Personal Portfolio V1</h5>
+            <p class="card-text">My first portfolio project showcasing a responsive layout and navigation with Bootstrap and custom styling.</p>
+            <a href="https://github.com/UmutcanKAVAK/capstone-project-2" class="btn btn-primary github-button" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+        <div class="card h-100" style="width: 18rem;">
+          <img src="images/4992491.jpg" class="card-img-top" width="286px" height="134.2px" alt="Personal Portfolio V1">
+          <div class="card-body">
+            <h5 class="card-title">Upcoming Project</h5>
+            <p class="card-text">Stay tuned for more exciting projects that demonstrate my growing expertise in web development.</p>
+            <a href="https://github.com/UmutcanKAVAK/capstone-project-2" class="btn btn-primary github-button" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Footer Section -->
+
+ <div id="footer" class="container " >
+  <footer  class="d-flex flex-wrap justify-content-between align-items-center py-3   mt-4 border-top w-100">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span  id="footer-text" class="mb-3 mb-md-0 text-body-secondary">© 2024 Umut Can Kavak</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3">
+        <a class="text-body-secondary" href="https://www.linkedin.com/in/umut-can-kavak/" target="_blank">
+          <img src="/images/icons8-linkedin-100.png" alt="LinkedIn" width="30">
+        </a>
+      </li>
+      <li class="ms-3">
+        <a class="text-body-secondary" href="https://github.com/UmutcanKAVAK" target="_blank">
+          <img src="/images/icons8-github-64.png" alt="GitHub" width="30">
+        </a>
+      </li>
+      <li class="ms-3">
+        <a class="text-body-secondary" href="mailto:umutcankvk335@gmail.com">
+          <img src="/images/mail-1454731_640.webp" alt="Email" width="30">
+        </a>
+      </li>
+    </ul>
+  </footer>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  // Place your script logic here
+  updateLanguage(currentLanguage);
+});
+
+  const translations = {
+  en: {
+    navbarBrand: "Personal Portfolio",
+    homeLink: "Home",
+    resumeLink: "Resume",
+    projectsLink: "Projects",
+    contactLink: "Contact",
+    languageButton: "Switch to Turkish",
+    heroGreeting: "Hi, I'm Umut Can",
+    heroDescription:
+      "A passionate developer striving to build innovative and impactful solutions. This portfolio showcases my projects, skills, and professional journey.",
+    resumeHeader: "Resume",
+    educationHeader: "Education",
+    educationDetails: [
+      "GoIT Full Stack Development Course (Dec 2024 - Nov 2025)",
+      "Golhisar Uygulamalı Bilimler Yüksekokulu - Bachelor's Degree",
+      "(2021 - 2025)",
+      "Yatağan Anadolu Lisesi - Graduated",
+      "(2016 - 2020)",
+    ],
+    skillsHeader: "Skills",
+    skillsDetails: {
+      programming: "Programming Languages",
+      programmingList: "HTML, CSS, JavaScript, Python",
+      frameworks: "Frameworks and Libraries",
+      frameworksList: "Bootstrap, React, Laravel",
+      tools: "Tools and Platforms",
+      toolsList: "Figma, Git, GitHub",
+      softSkills: "Soft Skills",
+      softSkillsList: "Teamwork, Problem-Solving, Time Management",
+    },
+    workExperienceHeader: "Work Experience",
+    workExperienceDetails: [
+      {
+        title: "Bootcamp Training",
+        description:
+          "Currently enrolled in a Full Stack Development Bootcamp, building practical skills in web development, including HTML, CSS, JavaScript, and React.",
+      },
+      {
+        title: "Personal Projects",
+        description:
+          "Developed several projects during training to demonstrate my skills, including portfolio websites, responsive layouts, and dynamic applications.",
+      },
+      {
+        title: "Future Aspirations",
+        description:
+          "Actively preparing to apply for entry-level web development roles upon completing the bootcamp, with a strong focus on both technical and collaborative skills.",
+      },
+    ],
+    projectsHeader: "Projects",
+    projectsDetails: [
+      {
+        title: "Hayalai ChatBot Project",
+        description:
+          "An AI-powered chatbot designed to assist users with various tasks, providing quick and accurate responses.",
+      },
+      {
+        title: "Personal Portfolio V1",
+        description:
+          "My first portfolio project showcasing a responsive layout and navigation with Bootstrap and custom styling.",
+      },
+      {
+        title: "Upcoming Project",
+        description:
+          "Stay tuned for more exciting projects that demonstrate my growing expertise in web development.",
+      },
+    ],
+    footerText: "© 2024 Umut Can Kavak",
+
+
+
+ projectsDescription: "Here are some of the projects I made so far. There will be more yet to come.",
+   viewOnGitHub: "View on GitHub",
+
+  },
+  tr: {
+    navbarBrand: "Kişisel Portföy",
+    homeLink: "Anasayfa",
+    resumeLink: "Özgeçmiş",
+    projectsLink: "Projeler",
+    contactLink: "İletişim",
+    languageButton: "İngilizce'ye Geç",
+    heroGreeting: "Merhaba, Ben Umut Can",
+    heroDescription:
+      "Yenilikçi ve etkili çözümler oluşturmak için tutkulu bir geliştirici. Bu portföy, projelerimi, becerilerimi ve profesyonel yolculuğumu sergiler.",
+    resumeHeader: "Özgeçmiş",
+    educationHeader: "Eğitim",
+    educationDetails: [
+      "GoIT Tam Yığın Geliştirme Kursu (Aralık 2024 - Kasım 2025)",
+      "Gölhisar Uygulamalı Bilimler Yüksekokulu - Lisans Derecesi",
+      "(2021 - 2025)",
+      "Yatağan Anadolu Lisesi - Mezun",
+      "(2016 - 2020)",
+    ],
+    skillsHeader: "Beceriler",
+    skillsDetails: {
+      programming: "Programlama Dilleri",
+      programmingList: "HTML, CSS, JavaScript, Python",
+      frameworks: "Çerçeveler ve Kütüphaneler",
+      frameworksList: "Bootstrap, React, Laravel",
+      tools: "Araçlar ve Platformlar",
+      toolsList: "Figma, Git, GitHub",
+      softSkills: "Kişisel Beceriler",
+      softSkillsList: "Ekip Çalışması, Problem Çözme, Zaman Yönetimi",
+    },
+    workExperienceHeader: "İş Deneyimi",
+    workExperienceDetails: [
+      {
+        title: "Bootcamp Eğitimi",
+        description:
+          "HTML, CSS, JavaScript ve React dahil olmak üzere web geliştirme konusunda pratik beceriler kazandıran bir Tam Yığın Geliştirme Bootcamp'ine katılmaktayım.",
+      },
+      {
+        title: "Kişisel Projeler",
+        description:
+          "Portföy web siteleri, duyarlı tasarımlar ve dinamik uygulamalar dahil olmak üzere becerilerimi göstermek için eğitim sırasında birçok proje geliştirdim.",
+      },
+      {
+        title: "Gelecek Hedefleri",
+        description:
+          "Bootcamp'i tamamladıktan sonra giriş seviyesi web geliştirme pozisyonlarına başvurmak için aktif olarak hazırlanıyorum ve hem teknik hem de iş birliği becerilerine odaklanıyorum.",
+      },
+    ],
+    projectsHeader: "Projeler",
+    projectsDetails: [
+      {
+        title: "Hayalai ChatBot Projesi",
+        description:
+          "Kullanıcıları çeşitli görevlerde desteklemek için tasarlanmış, hızlı ve doğru yanıtlar sağlayan bir yapay zeka destekli chatbot.",
+      },
+      {
+        title: "Kişisel Portföy V1",
+        description:
+          "Bootstrap ve özel stil kullanılarak oluşturulmuş, duyarlı bir tasarımı ve gezinmeyi sergileyen ilk portföy projem.",
+      },
+      {
+        title: "Yaklaşan Proje",
+        description:
+          "Web geliştirme konusundaki büyüyen uzmanlığımı gösteren daha heyecan verici projeler için takipte kalın.",
+      },
+    ],
+    footerText: "© 2024 Umut Can Kavak",  projectsDescription: "Şimdiye kadar yaptığım bazı projeler burada. Daha fazlası yakında gelecek.", viewOnGitHub: "GitHub'da Görüntüle",
+  },
+};
+
+let currentLanguage = "en";
+
+function updateLanguage(language) {
+  // Navbar
+  document.querySelector(".navbar-brand").innerText = translations[language].navbarBrand;
+  document.querySelector("#home-link").innerText = translations[language].homeLink;
+  document.querySelector("#resume-link").innerText = translations[language].resumeLink;
+  document.querySelector("#projects-link").innerText = translations[language].projectsLink;
+  document.querySelector("#contact-link").innerText = translations[language].contactLink;
+
+  // Hero Section
+  document.getElementById("hero-greeting").innerText = translations[language].heroGreeting;
+  document.getElementById("hero-description").innerText = translations[language].heroDescription;
+
+  // Resume Section
+  document.getElementById("resume-header").innerText = translations[language].resumeHeader;
+  document.getElementById("education-header").innerText = translations[language].educationHeader;
+
+  const educationList = translations[language].educationDetails
+    .map((item) => `<li>${item}</li>`)
+    .join("");
+  document.getElementById("education-details").innerHTML = educationList;
+
+  const workExperienceList = translations[language].workExperienceDetails
+    .map((item) => `<li>${item.title}: ${item.description}</li>`)
+    .join("");
+  document.getElementById("work-experience").innerHTML = workExperienceList;
+ // Skills Section
+    document.getElementById("skills-header").innerText = translations[language].skillsHeader;
+    const skillsList = `
+        <li><p class="second-text fw-bold">${translations[language].skillsDetails.programming}</p>
+        <p class="text-muted second-text">${translations[language].skillsDetails.programmingList}</p></li>
+        <li><p class="second-text fw-bold">${translations[language].skillsDetails.frameworks}</p>
+        <p class="text-muted second-text">${translations[language].skillsDetails.frameworksList}</p></li>
+        <li><p class="second-text fw-bold">${translations[language].skillsDetails.tools}</p>
+        <p class="text-muted second-text">${translations[language].skillsDetails.toolsList}</p></li>
+        <li><p class="second-text fw-bold">${translations[language].skillsDetails.softSkills}</p>
+        <p class="text-muted second-text">${translations[language].skillsDetails.softSkillsList}</p></li>`;
+    
+    document.getElementById("skills-details").innerHTML = skillsList;
+ // Projects Section
+  document.getElementById("projects-header").innerText = translations[language].projectsHeader;
+document.getElementById("projects-description").innerText =
+    translations[language].projectsDescription;
+
+  // Update project cards dynamically
+  const projectsDetails = translations[language].projectsDetails;
+  const projectCards = document.querySelectorAll("#projects-container .card");
+
+  projectCards.forEach((card, index) => {
+    if (projectsDetails[index]) {
+      card.querySelector(".card-title").innerText = projectsDetails[index].title;
+      card.querySelector(".card-text").innerText = projectsDetails[index].description;
+    }
+  });
+      // Update GitHub links styled as buttons
+  const githubLinks = document.querySelectorAll(".github-button");
+  githubLinks.forEach((link) => {
+    link.innerText = translations[language].viewOnGitHub;
+  });
+  // Footer
+  document.getElementById("footer-text").innerText = translations[language].footerText;
+
+  // Language Toggle Button Update
+  document.getElementById("languageToggle").innerText = language === "en" ? "TR" : "EN";
+}
+document.getElementById("languageToggle").addEventListener("click", () => {
+  currentLanguage = currentLanguage === "en" ? "tr" : "en";
+  updateLanguage(currentLanguage);
+});
+
+
+
+// Initialize default language
+updateLanguage(currentLanguage);
+
+</script>
+
+
   </body>
 </html>

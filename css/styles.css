@@ -30,3 +30,25 @@ color: #F9F7F7;
     .nav-link{
         color: #F9F7F7;
     }
+
+    #resume {
+background-color:#3F72AF;
+    }
+
+    #projects {
+        background-color: #3f72af;
+    }
+
+    #footer {
+        background-color: #3f72af;
+    }
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #112D4E;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #6c757d;
+}
